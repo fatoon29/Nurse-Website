@@ -1,6 +1,6 @@
 [project]
-id = "io.buildpacks.bbh-website"
-name = "BBH-Website"
+id = "io.buildpacks.nurse"
+name = "nurse-Website"
 version = "1.0.0"
 
 [build]

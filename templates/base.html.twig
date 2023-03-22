@@ -1,24 +1,140 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cabinet infirmier à Sevrier</title>
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
 
+		<link rel="stylesheet" href="{{ asset('assets/mdb/css/mdb.min.css') }}">
+		<link rel="stylesheet" href="{{ asset('assets/mdb/plugins/css/all.min.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+		<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+		</head>
+		<body>
+			<header>
+				<!-- Navbar -->
+				<nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+					<div class="container">
+						<a class="navbar-brand" href="index.html">
+							<img src="{{ asset('assets/images/logo.png') }}" alt="" width="50">
+						</a>
+						<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fas fa-bars"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#presentation">Présentation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#office-care">Soins au cabinet</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#home-care">Soins à domicile</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#team">Notre équipe</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!-- Navbar -->
 
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+				<!--Section: Design Block-->
+				<section>
 
+					<div id="intro" class="bg-image bg-fixed " style="
+							            background-image: url('{{ asset('assets/images/lac_annecy.jpg') }}');
+							            height: 50vh;
+							            ">
+						<div class="mask">
+							<div class="container d-flex justify-content-center align-items-center h-100">
+								<div class="row align-items-center text-white">
+									<div class="my-5">
+										<h1>Cabinet infirmier à Sevrier</h1>
+										<hr class="my-4" style="opacity: 1;"/>
+										<p class="lead mb-5">
+											Soins à domicile ou au cabinet
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--Section: Design Block-->
+			</header>
 
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+			{% block body %}{% endblock %}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+			<footer
+				class="text-white text-center text-lg-start" style="background-color: #78978D;">
+				<!-- Grid container -->
+				<div
+					class="container p-4">
+					<!--Grid row-->
+					<div
+						class="row mt-4">
+						<!--Grid column-->
+						<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+							<h5 class="text-uppercase mb-4">Cabinet infirmier à Sevrier</h5>
 
-</html>
+							<p>
+								Soins à domicile ou au cabinet
+							</p>
+
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+							<ul class="fa-ul" style="margin-left: 1.65em;">
+								<li class="mb-3">
+									<span class="fa-li">
+										<i class="fas fa-home"></i>
+									</span>
+									<span class="ms-2">400 allée des Allobroges 74320 Sevrier</span>
+								</li>
+								<li class="mb-3">
+									<span class="fa-li">
+										<i class="fas fa-envelope"></i>
+									</span>
+									<span class="ms-2">sevrierinfirmiere@gmail.com</span>
+								</li>
+								<li class="mb-3">
+									<span class="fa-li">
+										<i class="fas fa-phone"></i>
+									</span>
+									<span class="ms-2">07 71 76 81 91</span>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+
+					</div>
+					<!--Grid row-->
+				</div>
+				<!-- Grid container -->
+
+				<!-- Copyright -->
+				<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+					© 2023 Copyright:
+					<a class="text-white" href="https://mdbootstrap.com/">Fabien Perrichon</a>
+				</div>
+				<!-- Copyright -->
+			</footer>
+
+			<script type="text/javascript" src="{{ asset('/assets/mdb/js/mdb.min.js') }}"></script>
+			<script type="text/javascript" src="{{ asset('/assets/mdb/plugins/js/all.min.js') }}"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="{{ asset('/assets/parallax.js/parallax.js') }}"></script>
+			<script src="{{ asset('/assets/js/main.js') }}"></script>
+
+		</body>
+	</html>

@@ -1,0 +1,11 @@
+.navbar-scroll .fa-bars, .navbar-scroll .nav-link{
+    color :#4f4f4f;
+}
+
+.btn-primary, .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #78978D;
+}
+
+.text-primary{
+    color: #78978D!important;
+}

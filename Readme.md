@@ -1,39 +1,22 @@
 
-# Symfony 6 starter pack  😏 
+# Cabine infirmier à Sevrier 💉
+
 
 ## Description
 
-Starter kit to build a symfony app based on symfony skeleton 🎵
+Website for nurses
 
-## Installation with Gitpod  🚀 
-
-1. Go to gitpod : https://gitpod.io/t/lumy/projects
-
-2. Create new projet
-
-3. Start workspace ✌️
-
-4. Run Webpack Encore : `yarn watch`
 
 ## Instalation local with symfony server  🚀 
 
-1. Click on "Use this template"
 
-2. Change owner and fill repository name
+1. Clone this rep 🖥️. 
 
-3. Clone this rep 🖥️. 
+2. Run yarn : `composer install`
 
-4. **Rename folder and delete git folder** 🖋️
+3. Run : `php -S 127.0.0.1:8000 -t public/` ⚙️
 
-5. In .env file change **App variable**
-
-6. Run yarn : `yarn install`
-
-7. Run Webpack Encore : `yarn watch`
-
-8. Run : `symfony server:start` ⚙️
-
-9. It works on my machine 🔥
+4. It works on my machine 🔥
 
 ## Mailer configurations
 
@@ -43,12 +26,10 @@ Starter kit to build a symfony app based on symfony skeleton 🎵
 
 ## Installed bundle
 - Twig
+- Twig extra bundle
 - Maker
 - Asset
 - Web-profiler (debug bar)
 - Forms
 - Validator
 - Mailer
-- Webpack encore
-- SensioFrameworkExtraBundle
-- ORM Pack

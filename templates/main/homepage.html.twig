@@ -1,29 +1,301 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}Hello MainController!
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Symfony 6 starter pack 😏</h1>
+	<main>
+		<div
+			class="container my-5">
+			<!--Section: Design Block-->
+			<section class="text-center" id="presentation">
+				<h3 class="mb-5">Présentation</h3>
 
-    <h3>Starter kit to build a symfony app based on symfony skeleton 🎵</h3>
-    <br>
-    <h4>Installed bundle : </h4>
-    <ul>
-        <li>Twig</li>
-        <li>Maker</li>
-        <li>Asset</li>
-        <li>Web-profiler (debug bar)</li>
-        <li>Forms</li>
-        <li>Validator</li>
-        <li>Mailer</li>
-        <li>Webpack encore</li>
-        <li>ORM Pack</li>
-    </ul>
-</div>
+				<p class="mb-5 mx-auto w-responsive">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum laborum animi doloremque
+					                    nam dicta veniam dolor ea nostrum excepturi laboriosam molestiae, expedita odit id! Sunt
+					                    quia cumque consequatur perferendis hic.
+				</p>
+
+			</section>
+			<!--Section: Design Block-->
+		</div>
+
+		<div
+			class="container my-5">
+			<!--Section: Design Block-->
+			<section id="office-care">
+				<div class="row">
+					<div class="col-lg-7 mb-4 mb-lg-0 pb-2 pb-lg-0">
+						<h3 class="mb-3">Soins au cabinet</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta ratione
+							                            quisquam, dicta ab cupiditate iure eaque? Repellendus voluptatum, magni impedit
+							                            eaque delectus, beatae maxime temporibus maiores quibusdam quasi. Rem magnam ad
+							                            perferendis iusto sint tempora ea voluptatibus iure, animi excepturi modi aut
+							                            possimus in hic molestias repellendus illo ullam odit quia velit.
+						</p>
+						<p>
+							Qui expedita sit quo, maxime molestiae. Lorem ipsum dolor sit amet, consectetur
+							                            adipisicing elit. Nemo animi soluta ratione quisquam, dicta ab cupiditate iure eaque
+							                            repellendus voluptatum.
+						</p>
+						<a href="#contact" class="btn btn-primary btn-lg btn-rounded mt-3 mt-lg-4">
+							Contactez nous
+						</a>
+					</div>
+					<div class="col-lg-4 offset-lg-1 pb-2">
+						<img src="https://mdbootstrap.com/img/Photos/Vertical/People/img%20%282%29.jpg" class="w-100 shadow-3 rounded" alt="Sample image"/>
+					</div>
+				</div>
+			</section>
+			<!--Section: Design Block-->
+
+			<!--Section: Design Block-->
+			<section id="home-care">
+				<div class="row">
+					<div class="col-lg-4 pb-2">
+						<img src="https://mdbootstrap.com/img/Photos/Vertical/People/img%20%282%29.jpg" class="w-100 shadow-3 rounded" alt="Sample image"/>
+					</div>
+					<div class="col-lg-7 mb-4 mb-lg-0 pb-2 pb-lg-0  offset-lg-1 ">
+						<h3 class="mb-3">Soins à domicile</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta ratione
+							                            quisquam, dicta ab cupiditate iure eaque? Repellendus voluptatum, magni impedit
+							                            eaque delectus, beatae maxime temporibus maiores quibusdam quasi. Rem magnam ad
+							                            perferendis iusto sint tempora ea voluptatibus iure, animi excepturi modi aut
+							                            possimus in hic molestias repellendus illo ullam odit quia velit.
+						</p>
+						<p>
+							Qui expedita sit quo, maxime molestiae. Lorem ipsum dolor sit amet, consectetur
+							                            adipisicing elit. Nemo animi soluta ratione quisquam, dicta ab cupiditate iure eaque
+							                            repellendus voluptatum.
+						</p>
+						<a href="#contact" class="btn btn-primary btn-lg btn-rounded mt-3 mt-lg-4">
+							Contactez nous
+						</a>
+					</div>
+				</div>
+			</section>
+			<!--Section: Design Block-->
+		</div>
+
+		<!--Section: Design Block-->
+		<section>
+			<div class="row g-0">
+				<div class="col-md-3">
+					<div class="bg-image hover-overlay">
+						<img src="https://mdbootstrap.com/img/Photos/Others/images/40.jpg" class="w-100"/>
+						<div class="mask d-flex justify-content-center align-items-center text-center h-100" style="background-color: rgba(33, 150, 243, 0.7);">
+							<p class="h4 text-white mb-0">Lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bg-image hover-overlay">
+						<img src="https://mdbootstrap.com/img/Photos/Others/images/39.jpg" class="w-100"/>
+						<div class="mask d-flex justify-content-center align-items-center text-center h-100" style="background-color: rgba(33, 150, 243, 0.7);">
+							<p class="h4 text-white mb-0">Lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bg-image hover-overlay">
+						<img src="https://mdbootstrap.com/img/Photos/Others/images/38.jpg" class="w-100"/>
+						<div class="mask d-flex justify-content-center align-items-center text-center h-100" style="background-color: rgba(33, 150, 243, 0.7);">
+							<p class="h4 text-white mb-0">Lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="bg-image hover-overlay">
+						<img src="https://mdbootstrap.com/img/Photos/Others/images/41.jpg" class="w-100"/>
+						<div class="mask d-flex justify-content-center align-items-center text-center h-100" style="background-color: rgba(33, 150, 243, 0.7);">
+							<p class="h4 text-white mb-0">Lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Section: Design Block-->
+
+
+		<div
+			class="container my-5">
+			<!--Section: Design Block-->
+			<section id="team">
+				<h3 class="text-center mb-5">Notre équipe</h3>
+
+				<p class="text-center mb-5 mx-auto w-responsive">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum laborum animi doloremque
+					                    nam dicta veniam dolor ea nostrum excepturi laboriosam molestiae, expedita odit id! Sunt
+					                    quia cumque consequatur perferendis hic.
+				</p>
+
+				<div class="row">
+					<div
+						class="col-12">
+						<!-- Pills navs -->
+						<ul class="nav nav-pills mb-3 justify-content-center mt-n2" id="crewTabs" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" id="corrine-tab" data-mdb-toggle="pill" href="#corrine" role="tab" aria-controls="corrine" aria-selected="true">
+									<i class="far fa-eye me-2"></i>Corrine Charvin</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="lauriane-tab" data-mdb-toggle="pill" href="#lauriane" role="tab" aria-controls="lauriane" aria-selected="false">
+									<i class="fas fa-heartbeat me-2"></i>Laurian Poncin</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="lea-tab" data-mdb-toggle="pill" href="#lea" role="tab" aria-controls="lea" aria-selected="false">
+									<i class="fas fa-search me-2"></i>Lea Manguie (remplaçante)</a>
+							</li>
+						</ul>
+						<!-- Pills navs -->
+
+						<!-- Pills content -->
+						<div class="tab-content pt-3" id="crewContent">
+							<div class="tab-pane fade show active" id="corrine" role="tabpanel" aria-labelledby="corrine-tab">
+								<div class="row justify-content-center">
+									<div class="col-lg-4 col-xl-3 order-lg-1 order-2">
+										<img src="/assets/images/women.jpg" class="w-100 shadow-3 rounded" alt="Sample image"/>
+									</div>
+									<div class="col-lg-7 col-xl-6 mb-4 mb-lg-0 order-lg-2 order-1">
+										<h4 class="mb-4">Corrine Charvin</h4>
+										<p class="lead mb-lg-0">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta
+											                                            ratione quisquam, dicta ab cupiditate iure eaque? Repellendus voluptatum,
+											                                            magni impedit eaque delectus, beatae maxime temporibus maiores quibusdam
+											                                            quasi.Rem magnam ad perferendis iusto sint tempora ea voluptatibus iure,
+											                                            animi excepturi modi aut possimus in hic molestias repellendus illo ullam
+											                                            odit quia velit.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="lauriane" role="tabpanel" aria-labelledby="massage-tab">
+								<div class="row justify-content-center">
+									<div class="col-lg-4 col-xl-3 order-lg-1 order-2">
+										<img src="/assets/images/women.jpg" class="w-100 shadow-3 rounded" alt="Sample image"/>
+									</div>
+									<div class="col-lg-7 col-xl-6 mb-4 mb-lg-0 order-lg-2 order-1">
+										<h4 class="mb-4">Laurian Poncin</h4>
+										<p class="lead mb-lg-0">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta
+											                                            ratione quisquam, dicta ab cupiditate iure eaque? Repellendus voluptatum,
+											                                            magni impedit eaque delectus, beatae maxime temporibus maiores quibusdam
+											                                            quasi.Rem magnam ad perferendis iusto sint tempora ea voluptatibus iure,
+											                                            animi excepturi modi aut possimus in hic molestias repellendus illo ullam
+											                                            odit quia velit.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="lea" role="tabpanel" aria-labelledby="cosmetic-tab">
+								<div class="row justify-content-center">
+									<div class="col-lg-4 col-xl-3 order-lg-1 order-2">
+										<img src="/assets/images/women.jpg" class="w-100 shadow-3 rounded" alt="Sample image"/>
+									</div>
+									<div class="col-lg-7 col-xl-6 mb-4 mb-lg-0 order-lg-2 order-1">
+										<h4 class="mb-4">Lea Manguie (remplaçante)</h4>
+										<p class="lead mb-lg-0">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta
+											                                            ratione quisquam, dicta ab cupiditate iure eaque? Repellendus voluptatum,
+											                                            magni impedit eaque delectus, beatae maxime temporibus maiores quibusdam
+											                                            quasi.Rem magnam ad perferendis iusto sint tempora ea voluptatibus iure,
+											                                            animi excepturi modi aut possimus in hic molestias repellendus illo ullam
+											                                            odit quia velit.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Pills content -->
+					</div>
+				</div>
+			</section>
+			<!--Section: Design Block-->
+
+
+			<hr
+			class="my-5"/>
+
+			<!--Section: Design Block-->
+			<section id="contact">
+				<h3 class="text-center mb-5">Contacter nous</h3>
+
+				<p class="text-center mb-5 mx-auto w-responsive">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum laborum animi doloremque
+					                    nam dicta veniam dolor ea nostrum excepturi laboriosam molestiae, expedita odit id! Sunt
+					                    quia cumque consequatur perferendis hic.
+				</p>
+
+				<form>
+					<div class="row">
+						<div class="col-md-8 col-lg-9">
+							<div class="row mb-4">
+								<div class="col-md-6 mb-4 mb-md-0">
+									<div class="form-outline">
+										<input type="text" id="form3Example1" class="form-control"/>
+										<label class="form-label" for="form3Example1">Prénom</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-outline">
+										<input type="email" id="form3Example2" class="form-control"/>
+										<label class="form-label" for="form3Example2">Nom</label>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-4">
+								<div class="col-md-6 mb-4 mb-md-0">
+									<div class="form-outline">
+										<input type="text" id="form3Example11" class="form-control"/>
+										<label class="form-label" for="form3Example11">Téléphone</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-outline">
+										<input type="email" id="form3Example22" class="form-control"/>
+										<label class="form-label" for="form3Example22">Email</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-outline mb-4">
+								<textarea class="form-control" id="form4Example3" rows="4"></textarea>
+								<label class="form-label" for="form4Example3">Message</label>
+							</div>
+							<div class="text-center text-md-start">
+								<button type="submit" class="btn btn-primary btn-lg btn-rounded mb-5 mb-md-0">
+									envoyer<i class="far fa-paper-plane ms-2"></i>
+								</button>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-3">
+							<ul class="list-unstyled text-center text-md-start">
+								<li>
+									<p>
+										<i class="fas fa-map-marker-alt text-primary me-2"></i>400 allée des Allobroges 74320 Sevrier
+									</p>
+								</li>
+								<li>
+									<p>
+										<i class="fas fa-phone text-primary me-2"></i>07 71 76 81 91</p>
+								</li>
+								<li>
+									<p>
+										<i class="fas fa-envelope text-primary me-2"></i>sevrierinfirmiere@gmail.com</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</section>
+			<!--Section: Design Block-->
+
+			<hr class="my-5"/>
+
+		</div>
+	</main>
+
 {% endblock %}
