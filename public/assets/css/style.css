@@ -9,3 +9,23 @@
 .text-primary{
     color: #78978D!important;
 }
+
+#home-care-img1{
+    display: none;
+}
+
+#home-care-img2{
+    display: block;
+}
+
+@media (min-width: 992px){
+
+    #home-care-img1{
+        display: block;
+    }
+
+    #home-care-img2{
+        display: none;
+    }
+
+}

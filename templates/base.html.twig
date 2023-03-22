@@ -2,21 +2,29 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Cabinet infirmier à Sevrier</title>
-		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		<title>Cabinet infirmier à Sevrier - {% block title %}Accueil{% endblock %}</title>
+
+		<link rel="icon" type="image/x-icon" href="{{ asset('assets/images/logo.ico') }}">
 
 		<link rel="stylesheet" href="{{ asset('assets/mdb/css/mdb.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('assets/mdb/plugins/css/all.min.css') }}">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-		<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+		<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> 
+
+		{% block stylesheets %}
+		{% endblock %}
+
+		{% block javascripts %}
+		{% endblock %}
+
 		</head>
 		<body>
 			<header>
 				<!-- Navbar -->
 				<nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
 					<div class="container">
-						<a class="navbar-brand" href="index.html">
+						<a class="navbar-brand" href="{{ path('homepage') }}">
 							<img src="{{ asset('assets/images/logo.png') }}" alt="" width="50">
 						</a>
 						<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,13 +36,10 @@
 									<a class="nav-link" href="#presentation">Présentation</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#office-care">Soins au cabinet</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#home-care">Soins à domicile</a>
-								</li>
-								<li class="nav-item">
 									<a class="nav-link" href="#team">Notre équipe</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact">Contact</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#contact">Contact</a>
@@ -49,9 +54,9 @@
 				<section>
 
 					<div id="intro" class="bg-image bg-fixed " style="
-							            background-image: url('{{ asset('assets/images/lac_annecy.jpg') }}');
-							            height: 50vh;
-							            ">
+					background-image: url('{{ asset('assets/images/lac_annecy.jpg') }}');
+					height: 50vh;
+					">
 						<div class="mask">
 							<div class="container d-flex justify-content-center align-items-center h-100">
 								<div class="row align-items-center text-white">
@@ -124,8 +129,7 @@
 
 				<!-- Copyright -->
 				<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-					© 2023 Copyright:
-					<a class="text-white" href="https://mdbootstrap.com/">Fabien Perrichon</a>
+					© 2023 Copyright: Fabien Perrichon
 				</div>
 				<!-- Copyright -->
 			</footer>
