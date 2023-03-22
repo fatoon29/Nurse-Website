@@ -57,5 +57,9 @@
 }
 
 .mail{
-    color: #4f4f4f;;
+    color: #4f4f4f;
+}
+
+.btn-primary:hover{
+    background-color: #78978db4;
 }
