@@ -1,5 +1,5 @@
 
-# Cabine infirmier à Sevrier 💉
+# Cabine infirmier à Sévrier 💉
 
 
 ## Description

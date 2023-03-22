@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Cabinet infirmier à Sevrier - {% block title %}Accueil{% endblock %}</title>
+		<title>Cabinet infirmier à Sévrier - {% block title %}Accueil{% endblock %}</title>
 
 		<link rel="icon" type="image/x-icon" href="{{ asset('assets/images/logo.ico') }}">
 
@@ -33,16 +33,19 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav me-auto">
 								<li class="nav-item">
-									<a class="nav-link" href="#presentation">Présentation</a>
+									<a class="nav-link" href="{{ path('homepage', {'_fragment': 'presentation'}) }}">Présentation</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#team">Notre équipe</a>
+									<a class="nav-link" href="{{ path('homepage', {'_fragment': 'team'}) }}">Notre équipe</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#contact">Contact</a>
+									<a class="nav-link" href="{{ path('clinic') }}">Cabinet</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#contact">Contact</a>
+									<a class="nav-link" href="{{ path('covid') }}">COVID-19</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="{{ path('homepage', {'_fragment': 'contact'}) }}">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -61,7 +64,7 @@
 							<div class="container d-flex justify-content-center align-items-center h-100">
 								<div class="row align-items-center text-white">
 									<div class="my-5">
-										<h1>Cabinet infirmier à Sevrier</h1>
+										<h1>Cabinet infirmier à Sévrier</h1>
 										<hr class="my-4" style="opacity: 1;"/>
 										<p class="lead mb-5">
 											Soins à domicile ou au cabinet
@@ -87,7 +90,7 @@
 						class="row mt-4">
 						<!--Grid column-->
 						<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-							<h5 class="text-uppercase mb-4">Cabinet infirmier à Sevrier</h5>
+							<h5 class="text-uppercase mb-4">Cabinet infirmier à Sévrier</h5>
 
 							<p>
 								Soins à domicile ou au cabinet
@@ -104,13 +107,13 @@
 									<span class="fa-li">
 										<i class="fas fa-home"></i>
 									</span>
-									<span class="ms-2">400 allée des Allobroges 74320 Sevrier</span>
+									<span class="ms-2">400 allée des Allobroges 74320 Sévrier</span>
 								</li>
 								<li class="mb-3">
 									<span class="fa-li">
 										<i class="fas fa-envelope"></i>
 									</span>
-									<span class="ms-2">sevrierinfirmiere@gmail.com</span>
+									<span class="ms-2">Sévrierinfirmiere@gmail.com</span>
 								</li>
 								<li class="mb-3">
 									<span class="fa-li">

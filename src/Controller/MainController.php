@@ -19,4 +19,10 @@ class MainController extends AbstractController
     {
         return $this->render('main/clinic.html.twig');
     }
+
+    #[Route('/covid', name: 'covid')]
+    public function covid(): Response
+    {
+        return $this->render('main/covid.html.twig');
+    }
 }
