@@ -1,12 +1,15 @@
-.nav-link{
+/* .nav-link{
     color :#fff;
+} */
+.nav-link{
+    color :#4f4f4f!important;
 }
 
 .navbar-scrolled .fa-bars, .nav-link{
     color :#4f4f4f;
 }
 
-.navbar-scroll .logo-white{
+/* .navbar-scroll .logo-white{
     display: block;
 }
 
@@ -20,7 +23,7 @@
 
 .navbar-scrolled .logo-black{
     display: block;
-}
+} */
 
 .btn-primary, .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: #78978D;
