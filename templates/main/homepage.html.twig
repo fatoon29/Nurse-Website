@@ -238,44 +238,39 @@
 				</div>
 				<!--Google Maps-->
 
-				<form>
+				{{ form_start(form) }}
 					<div class="row">
 						<div class="col-md-8 col-lg-9">
 							<div class="row mb-4">
 								<div class="col-md-6 mb-4 mb-md-0">
 									<div class="form-outline">
-										<input type="text" id="form3Example1" class="form-control"/>
-										<label class="form-label" for="form3Example1">Prénom</label>
+										{{form_row(form.firstname)}}
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-outline">
-										<input type="email" id="form3Example2" class="form-control"/>
-										<label class="form-label" for="form3Example2">Nom</label>
+										{{form_row(form.lastname)}}
 									</div>
 								</div>
 							</div>
 							<div class="row mb-4">
 								<div class="col-md-6 mb-4 mb-md-0">
 									<div class="form-outline">
-										<input type="text" id="form3Example11" class="form-control"/>
-										<label class="form-label" for="form3Example11">Téléphone</label>
+										{{form_row(form.phone)}}
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-outline">
-										<input type="email" id="form3Example22" class="form-control"/>
-										<label class="form-label" for="form3Example22">Email</label>
+										{{form_row(form.email)}}
 									</div>
 								</div>
 							</div>
 							<div class="form-outline mb-4">
-								<textarea class="form-control" id="form4Example3" rows="4"></textarea>
-								<label class="form-label" for="form4Example3">Message</label>
+								{{form_row(form.message)}}
 							</div>
 							<div class="text-center text-md-start">
 								<button type="submit" class="btn btn-primary btn-lg btn-rounded mb-5 mb-md-0">
-									envoyer<i class="far fa-paper-plane ms-2"></i>
+									Envoyer<i class="far fa-paper-plane ms-2"></i>
 								</button>
 							</div>
 						</div>
@@ -297,7 +292,7 @@
 							</ul>
 						</div>
 					</div>
-				</form>
+				{{ form_end(form) }}
 			</section>
 			<!--Section: Design Block-->
 

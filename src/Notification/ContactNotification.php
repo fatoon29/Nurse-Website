@@ -23,7 +23,7 @@ class ContactNotification
         $message = (new TemplatedEmail())
             ->from('fatoon29@gmail.com')
             ->to('fatoon29@gmail.com')
-            ->subject($contact->getSubject())
+            ->subject('Nouveau message depuis le site')
             ->replyTo($contact->getEmail())
             ->htmlTemplate('emails/contact.html.twig')
             ->context([

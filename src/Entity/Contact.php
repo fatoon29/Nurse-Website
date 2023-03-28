@@ -15,9 +15,6 @@ class Contact
 
     private $message;
 
-    private $subject;
-
-  
 
     /**
      * Get the value of phone
@@ -78,28 +75,6 @@ class Contact
 
         return $this;
     }
-
-    /**
-     * Get the value of subject
-     */ 
-    public function getSubject()
-    {
-        return $this->subject;
-    }
-
-    /**
-     * Set the value of subject
-     *
-     * @return  self
-     */ 
-    public function setSubject($subject)
-    {
-        $this->subject = $subject;
-
-        return $this;
-    }
-
-
 
     /**
      * Get the value of lastname

@@ -49,13 +49,6 @@ class ContactType extends AbstractType
                 ],
             ])
 
-            ->add('subject', TextType::class, [
-                'label' => 'Objet ',
-                'constraints' => [
-                    new NotBlank(),
-                ],
-            ])
-
             ->add("message", TextareaType::class, [
                 'label' => 'Message',
                 'constraints' => [
